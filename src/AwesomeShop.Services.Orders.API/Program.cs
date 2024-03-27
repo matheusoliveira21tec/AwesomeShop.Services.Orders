@@ -1,10 +1,12 @@
 using AwesomeShop.Services.Orders.Application;
+using AwesomeShop.Services.Orders.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services
-    .AddApplication();
+    .AddApplication()
+    .AddInfrastructure();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
