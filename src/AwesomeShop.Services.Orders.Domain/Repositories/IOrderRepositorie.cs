@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AwesomeShop.Services.Orders.Domain.Entities;
 
-namespace AwesomeShop.Services.Orders.Domain.Repositories
+namespace AwesomeShop.Services.Orders.Domain.Repositories;
+
+public interface IOrderRepository
 {
-    internal interface IOrderRepositorie
-    {
-    }
+    Task<Order> GetByIdAsync(Guid id);
+    Task AddAsync(Order order);
+    Task UpdateAsync(Order order);
 }

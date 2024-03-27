@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AwesomeShop.Services.Orders.Application.Subscribers
 {
-    internal class FileName
+    internal class PaymentAcceptedSubscriber
     {
     }
 }
